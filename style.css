@@ -1,0 +1,300 @@
+:root {
+    /* ฟอนต์ */
+    --font: Arial, Helvetica, sans-serif;
+    --font_color: #2a92d5;
+
+    --data_P1: 50%;
+    --data_P2: 80%;
+    --data_P3: 20%;
+    --progresscolor: #2a92d5;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(227, 127, 6);
+
+}
+
+.container {
+   
+    background-color: aqua;
+    width: 526px;
+    height: 139px;
+    background: url(img/uicar.png);
+    background-size: 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center;
+   
+    position: relative;
+    
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%) scale(1);
+   
+
+}
+
+.containerwrap {
+    position: absolute;
+    width: 90px;
+    height: 80px;
+    /* background-color: aqua; */
+    left: 50%;
+    top: 40%;
+   
+    transform: translate(-50%, -50%);
+}
+
+.containericon {
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 25px;
+    width: 165px;
+    height: 30px;
+   
+    left: 50%;
+    top: 83%;
+    transform: translate(-50%, -50%);
+}
+
+.containergear {
+    position: absolute;
+    text-align: center;
+    font-family: var(--font);
+    color: var(--font_color);
+    font-size: 28px;
+
+    width: 28px;
+    height: 30px;
+    /* background-color: rgba(14, 202, 33, 0.418); */
+    left: 81.5%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+}
+
+.containerspeed {
+    position: absolute;
+
+    text-align: center;
+    font-family: var(--font);
+    color: var(--font_color);
+    font-size: 65px;
+
+    width: 100px;
+    height: 60px;
+    /* background-color: rgba(14, 202, 33, 0.418); */
+    left: 21.5%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+}
+
+.progress_bottom {
+    position: absolute;
+    clip-path: polygon(0 0, 5% 100%, 95% 100%, 100% 0);
+    width: 170px;
+    height: 5px;
+    background-color: #48494b;
+    left: 49.8%;
+    bottom: -2%;
+    transform: translate(-50%, -50%);
+}
+
+.progress_left {
+    position: absolute;
+
+    width: 12px;
+    height: 85%;
+    background-color: #48494b;
+    left: 5%;
+    top: 7%;
+    transform: translate(-50%, -50%);
+}
+
+.progress_right {
+    position: absolute;
+
+    width: 12px;
+    height: 85%;
+    background-color: #48494b;
+    right: 5%;
+    top: 7%;
+    transform: translate(-50%, -50%);
+}
+
+.progress_left,
+.progress_right {
+    transform: rotate(180deg);
+}
+
+.data_progress_bottom,
+.data_progress_left,
+.data_progress_right {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--progresscolor);
+}
+
+.data_progress_bottom {
+    width: var(--data_P1);
+
+}
+
+.data_progress_left {
+
+    height: var(--data_P2);
+
+}
+
+.data_progress_right {
+    height: var(--data_P3);
+}
+.icon1,.icon2,.icon3 {
+    width: 30px;
+    height: 30px;
+    background-color: #48494b;
+}
+.icon1{
+    background: url(img/icon/handbrake.png);
+    background-size: 70%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center;
+    position: relative;
+    filter: brightness(1);
+}
+.icon2{
+    background: url(img/icon/speed.png);
+    background-size: 70%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center;
+    position: relative;
+    filter: brightness(0.6);
+}.icon3{
+    background: url(img/icon/seatbelt.png);
+    background-size: 70%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center;
+    position: relative;
+    filter: brightness(0.6);
+}
+
+.car{
+    position: absolute;
+    display: none;
+    left: 15%;
+    width: 50px;
+    height: 100%;
+
+    background: url(img/icon/car.png);
+    background-size: 150%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center;
+
+}
+.motorbike{
+    position: absolute;
+    display: block;
+    left: 15%;
+    width: 50px;
+    height: 100%;
+  
+}
+.imgmotorbike{
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    background: url(img/icon/motorbike.png);
+    background-size: 110%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center;
+}
+.boat{
+    position: absolute;
+    display: none;
+    left: 18%;
+    width: 50px;
+    height: 100%;
+
+    background: url(img/icon/boat.png);
+    background-size: 110%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center;
+
+}
+.helicopter{
+    position: absolute;
+    display: none;
+    left: -5%;
+    width: 70px;
+    height: 100%;
+
+    background: url(img/icon/helicopter.png);
+    background-size: 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center;
+
+}
+.car_wheel1,.car_wheel2,.car_wheel3,.car_wheel4{
+    position: absolute;
+    width: 4px;
+    height: 12px;
+    border-radius: 2px;
+    background-color: aliceblue;
+}
+.car_wheel1{
+    top: 20%;
+    left: -9%;
+}
+.car_wheel2{
+    top: 20%;
+    left: 100%;
+}
+.car_wheel3{
+    top: 63%;
+    left: -9%;
+}
+.car_wheel4{
+    top: 63%;
+    left: 100%;
+}
+.motorbike_wheel1,.motorbike_wheel2{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: aliceblue;
+  
+}
+.motorbike_wheel1{
+    top: 53%;
+    left: -15%;
+}
+.motorbike_wheel2{
+    top: 53%;
+    left: 80%;
+}
+.motorbike_wheel1::before,.motorbike_wheel2::before{
+    content: '';
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #252628;
+}
+@media only screen and (max-width: 1600px) {
+    .container {
+        left: 50%;
+        top: 90%;
+        transform: translate(-50%, -50%) scale(0.8);
+    
+    }
+  }
